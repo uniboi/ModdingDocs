@@ -101,7 +101,7 @@ Sends a smaller message to ``player`` which will appear from the center right.
 PopUp
 ^^^^^
 
-Send a small popup to ``player`` which will appear in the lower half of their screen under their cursor.
+Send a small popup to ``player`` which will appear in the lower half of their screen under their crosshair.
 
 .. figure:: /_static/serversiderui/popup.gif
   :align: center
@@ -111,7 +111,7 @@ Send a small popup to ``player`` which will appear in the lower half of their sc
 
 **Definition:**
 
-.. cpp:function:: void function NSSendPopUpMessageToPlayer( entity player, string text )
+.. cpp:function:: void NSSendPopUpMessageToPlayer( entity player, string text )
 
 **Example:**
 
@@ -175,7 +175,7 @@ Deletes the status message which was created with ``id``
 **Examples:**
 
 .. code-block:: javascript
-  
+
     void function TestStatusMessage_Threaded(entity player)
     {
         string id = UniqueString("DUMMY_")
